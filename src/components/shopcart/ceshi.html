@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  var re = null;
+  var i;
+  for (i = 0; i < 10; i++) {
+    re = /[bc]at/i;  // 字面量表示法
+    re.text('catasjkdahj');
+  }
+  for (i = 0; i < 10; i++) {
+    re = new RegExp('/bc/at', 'i');  // 构造函数创建法
+    re.text('catasjkdahj');
+  }
+  var pattern1 = /\[bc\]at/i;
+  alert(pattern1.global); // false
+  alert(pattern1.ignoreCase); // true
+  alert(pattern1.lastIndex);  // 0
+  alert(pattern1.multiline);  // false
+  alert(pattern1.source);  // "[bc]at"
+  var pattern2 = new RegExp('\\[bc\\]at', 'i');
+  alert(pattern1.global); // false
+  alert(pattern1.ignoreCase); // true
+  alert(pattern1.lastIndex);  // 0
+  alert(pattern1.multiline);  // false
+  alert(pattern1.source);  // "[bc]at"
+  /* 两个输出结果不一样，字面量定义后每次循环不会创建新的
+    实例，第二次之后就会返回false，而创建实例表示法，会创建
+    新的实例，都会返回true */
+  // 匹配字符串中第一个“at”或“bc”的实例，不区分大小
+  var pattern1 = new RegExp('/bc/at', 'i');  // 构造函数创建法
+  // (){}[]\^$|?*+. 所有元字符检索时需要转义
+//  var pattern1 = /\[bc\]at/i;
+//  // 匹配字符串中第一个[bc]at实例，不分大小写
+</script>
+</body>
+</html>
