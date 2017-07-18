@@ -26,6 +26,7 @@ module.exports = {
     'semi':['error','always'],
     'indent': 0,
     'no-unused-vars': 0,
-    'no-array-constructor': 0
+    'no-array-constructor': 0,
+    'no-tabs': 0
   }
 }
