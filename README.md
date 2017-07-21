@@ -7,9 +7,8 @@
 
 ## 演示 
 
-<a href="http://www.51nannan.cn/sell/sell/index.html" target=_blank>在线演示戳我</a>（请使用chrome开发者手机演示模式预览）
-> 坑：不要问我为什么只有一个骨架，惭愧，在部署服务器的时候发现自己原来在后端写过反向代理的路由，mock的数据都在本地，所以，部署上去的时候遇到跨域问题，现在自己已经写了
-一个小型的express服务，正在配置服务器当中...
+<a href="http://119.23.222.225:8082/#/goods" target=_blank>在线演示戳我</a>（请使用chrome开发者手机演示模式预览）
+
 
 ## 项目全过程
 <a href="http://www.jianshu.com/p/bbf4d3f9ae4c" target=_blank>简书文章</a>
